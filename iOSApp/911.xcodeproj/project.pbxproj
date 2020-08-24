@@ -172,7 +172,6 @@
 		9344DC611D6CD05A00400EC2 /* NSManagedObjectContext+SAK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344DC5F1D6CD05A00400EC2 /* NSManagedObjectContext+SAK.swift */; };
 		A8B1DACA7C04BEC1A84423DF /* Pods_defaults_MapTemplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798EFC62328DAEFC5FF467CB /* Pods_defaults_MapTemplateUITests.framework */; };
 		BEA548E9BC48865F6B76496A /* Pods_defaults_911.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F4CC7D4E268042EBBB60B5 /* Pods_defaults_911.framework */; };
-		F2D6A215F6F2728B4BF08BC1 /* Pods_defaults_911.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F4CC7D4E268042EBBB60B5 /* Pods_defaults_911.framework */; };
 		FFF0547B4C85A04531305500 /* Pods_defaults_Sensory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F328EF432BFB355B7F892BBF /* Pods_defaults_Sensory.framework */; };
 /* End PBXBuildFile section */
 
@@ -321,7 +320,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEA548E9BC48865F6B76496A /* Pods_defaults_911.framework in Frameworks */,
-				F2D6A215F6F2728B4BF08BC1 /* Pods_defaults_911.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1220,7 +1218,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "William Falcon";
 				TargetAttributes = {
 					0226CF7D1D722E800088734B = {
@@ -1823,6 +1821,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 740D72E280A14F16F8B84F22 /* Pods-defaults-Sensory.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EL5CJBQ38Q;
 				INFOPLIST_FILE = "911 copy-Info.plist";
@@ -1838,6 +1837,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4DF8C69FB7ACB4191CF72EDE /* Pods-defaults-Sensory.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EL5CJBQ38Q;
 				INFOPLIST_FILE = "911 copy-Info.plist";
@@ -1863,8 +1863,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1909,8 +1911,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1929,6 +1933,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1938,6 +1943,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DA8421F2111C31DEA8377CC6 /* Pods-defaults-911.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/MapTemplate/config/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1952,6 +1958,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 310D178EC773BBBEF2A94E55 /* Pods-defaults-911.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/MapTemplate/config/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1966,6 +1973,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1969E24D26CD37F230758D4F /* Pods-defaults-911Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MapTemplateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1980,6 +1988,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1BCA5E55CCA8B6F63DD29496 /* Pods-defaults-911Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MapTemplateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1994,6 +2003,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6A608D5DC70CD517265A9AA6 /* Pods-defaults-911UITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MapTemplateUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hacstudios.MapTemplateUITests;
@@ -2007,6 +2017,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3FA1F485C66224ED6B9471F6 /* Pods-defaults-911UITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MapTemplateUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hacstudios.MapTemplateUITests;
