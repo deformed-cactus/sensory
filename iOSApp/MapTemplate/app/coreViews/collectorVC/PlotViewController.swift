@@ -179,7 +179,7 @@ class PlotViewController: UIViewController {
     
     //plot
     chartView.data = chartData
-    chartView.descriptionText = "Prediction results"
+    chartView.chartDescription?.text = "Prediction results"
     
   }
   
