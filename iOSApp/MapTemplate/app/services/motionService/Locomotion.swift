@@ -59,9 +59,9 @@ class Locomotion: NSObject {
         let bar = app.value(forKey: "statusBar")!
         let fv = (bar as AnyObject).value(forKey: "foregroundView") as! UIView
         let svs = fv.subviews
-        for var view in svs {
+        for view in svs {
             if view.isKind(of: NSClassFromString("UIStatusBarSignalStrengthItemView")!) {
-                var strength = view.value(forKey: "signalStrengthRaw")! as! Double
+                let strength = view.value(forKey: "signalStrengthRaw")! as! Double
                 return strength
             }
             

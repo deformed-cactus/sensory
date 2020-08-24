@@ -10,30 +10,6 @@ import UIKit
 import Charts
 import Alamofire
 import SVProgressHUD
-// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
-// Consider refactoring the code to use the non-optional operators.
-fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
-  switch (lhs, rhs) {
-  case let (l?, r?):
-    return l < r
-  case (nil, _?):
-    return true
-  default:
-    return false
-  }
-}
-
-// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
-// Consider refactoring the code to use the non-optional operators.
-fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
-  switch (lhs, rhs) {
-  case let (l?, r?):
-    return l > r
-  default:
-    return rhs < lhs
-  }
-}
-
 
 class PlotViewController: UIViewController {
   
@@ -116,7 +92,7 @@ class PlotViewController: UIViewController {
     
     //results
     var dps : [[String: AnyObject]] = []
-    if rows?.count > 1 {
+    if rows!.count > 1 {
       
       //parse each row
       for row in rows![1...rows!.count-1] {
@@ -212,8 +188,7 @@ class PlotViewController: UIViewController {
     
     let url = "\(AppSettings.API_ROOT())/test"
     let headers = ["Content-Type": "application/json"]
-    Alamofire.request(url, method: .post, parameters: ["data": self.data], encoding: JSONEncoding.default, headers: headers)
-      .validate()
+    Alamofire.request(url, method: .post, parameters: ["data": self.data], encoding: JSONEncoding.default, headers: headers).validate()
       .responseJSON { response in
         switch response.result {
         case .success:

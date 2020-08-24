@@ -279,7 +279,7 @@ class Collector: UITableViewController, UITextFieldDelegate {
             
             for var dp in self.dataPoints {
                 var vals: [String] = []
-                for var key in colNames {
+                for key in colNames {
                     vals.append("\(dp[key]!)")
                 }
                 let row = vals.joined(separator: ",") + "\n"
