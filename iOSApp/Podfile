@@ -12,10 +12,14 @@ abstract_target 'defaults' do
     pod 'SDWebImage', '~>3.7.3'
     pod 'SVProgressHUD'
     pod 'SwiftyJSON'
-    pod 'Charts/Realm'
+    pod 'Charts', '3.0.1'
+    pod 'Realm', '2.8.1'
+    pod 'RealmSwift', '2.8.1'
 
     target '911'
     target '911Tests'
     target '911UITests'
     target 'Sensory'
 end
+
+

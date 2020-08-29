@@ -91,6 +91,7 @@ open class PieChartRenderer: DataRenderer
     open func getSliceSpace(dataSet: IPieChartDataSet) -> CGFloat
     {
         guard
+            dataSet.automaticallyDisableSliceSpacing,
             let viewPortHandler = self.viewPortHandler,
             let data = chart?.data as? PieChartData
             else { return dataSet.sliceSpace }
@@ -129,7 +130,7 @@ open class PieChartRenderer: DataRenderer
         for j in 0 ..< entryCount
         {
             guard let e = dataSet.entryForIndex(j) else { continue }
-            if ((abs(e.y) > Double.ulpOfOne))
+            if ((abs(e.y) > DBL_EPSILON))
             {
                 visibleAngleCount += 1
             }
@@ -147,7 +148,7 @@ open class PieChartRenderer: DataRenderer
             guard let e = dataSet.entryForIndex(j) else { continue }
             
             // draw only if the value is greater than zero
-            if (abs(e.y) > Double.ulpOfOne)
+            if (abs(e.y) > DBL_EPSILON)
             {
                 if !chart.needsHighlight(index: j)
                 {
@@ -690,7 +691,7 @@ open class PieChartRenderer: DataRenderer
             for j in 0 ..< entryCount
             {
                 guard let e = set.entryForIndex(j) else { continue }
-                if ((abs(e.y) > Double.ulpOfOne))
+                if ((abs(e.y) > DBL_EPSILON))
                 {
                     visibleAngleCount += 1
                 }

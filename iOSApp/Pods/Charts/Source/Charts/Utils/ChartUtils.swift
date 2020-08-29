@@ -22,10 +22,10 @@ open class ChartUtils
     
     internal struct Math
     {
-        internal static let FDEG2RAD = CGFloat(Double.pi / 180.0)
-        internal static let FRAD2DEG = CGFloat(180.0 / Double.pi)
-        internal static let DEG2RAD = Double.pi / 180.0
-        internal static let RAD2DEG = 180.0 / Double.pi
+        internal static let FDEG2RAD = CGFloat(M_PI / 180.0)
+        internal static let FRAD2DEG = CGFloat(180.0 / M_PI)
+        internal static let DEG2RAD = M_PI / 180.0
+        internal static let RAD2DEG = 180.0 / M_PI
     }
     
     internal class func roundToNextSignificant(number: Double) -> Double
@@ -51,7 +51,7 @@ open class ChartUtils
         
         let i = roundToNextSignificant(number: Double(number))
         
-        if i.isInfinite
+        if i.isInfinite || i.isNaN
         {
             return 0
         }
@@ -67,7 +67,7 @@ open class ChartUtils
         }
         else
         {
-            return number + Double.ulpOfOne
+            return number + DBL_EPSILON
         }
     }
     
