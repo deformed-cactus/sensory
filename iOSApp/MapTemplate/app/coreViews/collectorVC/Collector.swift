@@ -128,7 +128,7 @@ class Collector: UITableViewController, UITextFieldDelegate {
     }
     
     
-    func addDataPoint() {
+    @objc func addDataPoint() {
         
         var dp: [String: AnyObject] = [
             "indoors": indoorStatus as AnyObject,

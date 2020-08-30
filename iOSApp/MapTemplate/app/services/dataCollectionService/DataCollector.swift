@@ -77,7 +77,7 @@ class DataCollector: NSObject {
   }
   
   //MARK: - Data Upload
-  func appMovedToBackground() {
+    @objc func appMovedToBackground() {
     print("App moved to background!")
     uploadDataQueue()
   }

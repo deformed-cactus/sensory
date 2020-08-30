@@ -56,7 +56,7 @@ public extension DispatchQueue {
 
     ///Dispatches code once
     ///Credit: http://stackoverflow.com/questions/37886994/dispatch-once-in-swift-3
-    public class func _once(_ token: String, block:(Void)->Void) {
+    public class func _once(_ token: String, block:()->Void) {
         objc_sync_enter(self); defer { objc_sync_exit(self) }
         
         if _onceTracker.contains(token) {
