@@ -10,6 +10,7 @@ import UIKit
 import Charts
 import Alamofire
 import SVProgressHUD
+import CoreData
 
 class PlotViewController: UIViewController {
   
@@ -68,7 +69,7 @@ class PlotViewController: UIViewController {
 
       var date = dateFormatter.date(from: dateStr)
       date = date?._addMilliseconds(ms: -3600)
-      
+
       let str = date?._dateString(format: "hh:mm:ss")
       x.append(str!)
     }
@@ -80,9 +81,9 @@ class PlotViewController: UIViewController {
     }
     
     
-    DispatchQueue._dispatchMainQueue {
+    DispatchQueue._dispatchMainQueue ({
       self.setChart(x, values: y, data:self.data)
-    }
+    })
   }
   
   func parseSession(_ session:Session) {

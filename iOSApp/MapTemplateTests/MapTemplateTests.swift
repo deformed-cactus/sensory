@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import MapTemplate
+//@testable import MapTemplate
 
 class MapTemplateTests: XCTestCase {
     

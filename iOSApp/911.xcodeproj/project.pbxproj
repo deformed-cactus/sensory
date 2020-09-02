@@ -163,6 +163,145 @@
 		02FEC9371D88CC5100CE6563 /* PlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FEC9341D88CC4E00CE6563 /* PlotViewController.swift */; };
 		02FEC9381D88CC5200CE6563 /* PlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FEC9341D88CC4E00CE6563 /* PlotViewController.swift */; };
 		559D20133D5DCDBEBDE00515 /* Pods_defaults_911UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB56173DE041221863E31035 /* Pods_defaults_911UITests.framework */; };
+		841ED83724FF3B9600E46DBD /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E1F34F1D72A43F00E7D172 /* Session.swift */; };
+		841ED83824FF3B9A00E46DBD /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E1F34F1D72A43F00E7D172 /* Session.swift */; };
+		841ED83924FF405100E46DBD /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0532E1DDD329100BCB35E /* Date.swift */; };
+		841ED83A24FF410200E46DBD /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0532A1DDD329100BCB35E /* Array.swift */; };
+		841ED83B24FF410200E46DBD /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1E91D6C146B004A73CE /* Address.swift */; };
+		841ED83C24FF411200E46DBD /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0532C1DDD329100BCB35E /* AttributedString.swift */; };
+		841ED83D24FF411200E46DBD /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053301DDD329100BCB35E /* Dictionary.swift */; };
+		841ED83E24FF411200E46DBD /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053321DDD329100BCB35E /* GCD.swift */; };
+		841ED83F24FF412E00E46DBD /* Integer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053341DDD329100BCB35E /* Integer.swift */; };
+		841ED84024FF412E00E46DBD /* ManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053361DDD329100BCB35E /* ManagedObject.swift */; };
+		841ED84124FF412E00E46DBD /* ManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053381DDD329100BCB35E /* ManagedObjectContext.swift */; };
+		841ED84224FF412E00E46DBD /* MKMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0533A1DDD329100BCB35E /* MKMapView.swift */; };
+		841ED84324FF412E00E46DBD /* MutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0533C1DDD329100BCB35E /* MutableAttributedString.swift */; };
+		841ED84424FF412E00E46DBD /* NSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0533E1DDD329100BCB35E /* NSArray.swift */; };
+		841ED84524FF412E00E46DBD /* NSString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053401DDD329100BCB35E /* NSString.swift */; };
+		841ED84624FF412E00E46DBD /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053421DDD329100BCB35E /* Number.swift */; };
+		841ED84724FF412E00E46DBD /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053441DDD329100BCB35E /* Set.swift */; };
+		841ED84824FF412E00E46DBD /* String-Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053461DDD329100BCB35E /* String-Crypto.swift */; };
+		841ED84924FF412E00E46DBD /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053471DDD329100BCB35E /* String.swift */; };
+		841ED84A24FF412E00E46DBD /* UIApplication+bolts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053491DDD329100BCB35E /* UIApplication+bolts.swift */; };
+		841ED84B24FF412E00E46DBD /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0534B1DDD329100BCB35E /* UIButton.swift */; };
+		841ED84C24FF412E00E46DBD /* UICollectionReusableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0534D1DDD329100BCB35E /* UICollectionReusableHeaderView.swift */; };
+		841ED84D24FF412E00E46DBD /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0534F1DDD329100BCB35E /* UICollectionView.swift */; };
+		841ED84E24FF412E00E46DBD /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053511DDD329100BCB35E /* UICollectionViewCell.swift */; };
+		841ED84F24FF412E00E46DBD /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053531DDD329100BCB35E /* UIColor.swift */; };
+		841ED85024FF412E00E46DBD /* UIImageViewBolts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053551DDD329100BCB35E /* UIImageViewBolts.swift */; };
+		841ED85124FF412E00E46DBD /* UIPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053571DDD329100BCB35E /* UIPanGestureRecognizer.swift */; };
+		841ED85224FF412E00E46DBD /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053591DDD329100BCB35E /* UIScrollView.swift */; };
+		841ED85324FF412E00E46DBD /* UITableViewCellUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0535B1DDD329100BCB35E /* UITableViewCellUtils.swift */; };
+		841ED85424FF412E00E46DBD /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0535D1DDD329100BCB35E /* UIView+AutoLayout.swift */; };
+		841ED85524FF412E00E46DBD /* UIView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0535E1DDD329100BCB35E /* UIView+Factory.swift */; };
+		841ED85624FF412E00E46DBD /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0535F1DDD329100BCB35E /* UIView.swift */; };
+		841ED85724FF412E00E46DBD /* UIViewController+Containment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053611DDD329100BCB35E /* UIViewController+Containment.swift */; };
+		841ED85824FF412E00E46DBD /* ViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053621DDD329100BCB35E /* ViewControllerUtils.swift */; };
+		841ED85924FF412E00E46DBD /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053641DDD329100BCB35E /* UIWindow.swift */; };
+		841ED85A24FF412E00E46DBD /* Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053661DDD329100BCB35E /* Url.swift */; };
+		841ED85B24FF412E00E46DBD /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204ED371DDDFA7100638FDA /* NSObject.swift */; };
+		841ED85C24FF412E00E46DBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DDFA601D66934C009D5966 /* AppDelegate.swift */; };
+		841ED85D24FF413E00E46DBD /* CollectorViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E1F3541D72ACB500E7D172 /* CollectorViewTableViewController.swift */; };
+		841ED85E24FF413E00E46DBD /* Collector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E1F3451D7273EB00E7D172 /* Collector.swift */; };
+		841ED85F24FF413E00E46DBD /* AddressbookVC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1EC1D6C1572004A73CE /* AddressbookVC+TableView.swift */; };
+		841ED86024FF414700E46DBD /* AddressbookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1BA1D6B35E5004A73CE /* AddressbookViewController.swift */; };
+		841ED86124FF414700E46DBD /* Address+IO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344DC5B1D6CCED500400EC2 /* Address+IO.swift */; };
+		841ED86224FF414700E46DBD /* ContactVC+TFDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1E01D6BDC5B004A73CE /* ContactVC+TFDelegate.swift */; };
+		841ED86324FF414700E46DBD /* ContactVC+MessageUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1DD1D6BD276004A73CE /* ContactVC+MessageUI.swift */; };
+		841ED86424FF414700E46DBD /* ContactVC+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1E21D6BDD89004A73CE /* ContactVC+Layout.swift */; };
+		841ED86524FF415700E46DBD /* Address+Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1F61D6C8398004A73CE /* Address+Persistance.swift */; };
+		841ED86624FF415700E46DBD /* DataCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93053A1A1D6E1E1C00FC3D1F /* DataCollector.swift */; };
+		841ED86724FF415700E46DBD /* Compass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0226CF6A1D6D14690088734B /* Compass.swift */; };
+		841ED86824FF415700E46DBD /* Compass+Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0226CF6C1D6D14690088734B /* Compass+Address.swift */; };
+		841ED86924FF415700E46DBD /* Compass+BackgroundLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0226CF6D1D6D14690088734B /* Compass+BackgroundLocation.swift */; };
+		841ED86A24FF415700E46DBD /* Compass+LocManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0226CF6E1D6D14690088734B /* Compass+LocManagerDelegate.swift */; };
+		841ED86B24FF415700E46DBD /* Locomotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0226CF7B1D6D149E0088734B /* Locomotion.swift */; };
+		841ED86C24FF415700E46DBD /* SSIDService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025F0FF61DE239A400235D9B /* SSIDService.swift */; };
+		841ED86D24FF415700E46DBD /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1F01D6C1616004A73CE /* AddressTableViewCell.swift */; };
+		841ED86E24FF416500E46DBD /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1C11D6B35E5004A73CE /* ContactViewController.swift */; };
+		841ED86F24FF416500E46DBD /* Map+TFDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1E51D6BE1F8004A73CE /* Map+TFDelegate.swift */; };
+		841ED87024FF416500E46DBD /* Map+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1DA1D6B3636004A73CE /* Map+Transitions.swift */; };
+		841ED87124FF416500E46DBD /* Map+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1C51D6B35E5004A73CE /* Map+Layout.swift */; };
+		841ED87224FF416500E46DBD /* Map+LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1C71D6B35E5004A73CE /* Map+LocationManager.swift */; };
+		841ED87324FF416500E46DBD /* Map+LocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1C91D6B35E5004A73CE /* Map+LocationManagerDelegate.swift */; };
+		841ED87424FF416500E46DBD /* Map+MapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1CB1D6B35E5004A73CE /* Map+MapViewDelegate.swift */; };
+		841ED87524FF417500E46DBD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1CE1D6B35E5004A73CE /* MapViewController.swift */; };
+		841ED87624FF418500E46DBD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022C6E6E1D669BCB009B7236 /* BaseViewController.swift */; };
+		841ED87724FF418500E46DBD /* NSManagedObject+SAK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344DC5E1D6CD05A00400EC2 /* NSManagedObject+SAK.swift */; };
+		841ED87824FF418500E46DBD /* NSManagedObjectContext+SAK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344DC5F1D6CD05A00400EC2 /* NSManagedObjectContext+SAK.swift */; };
+		841ED87924FF418500E46DBD /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E1F34E1D72A43F00E7D172 /* Session+CoreDataProperties.swift */; };
+		841ED87A24FF418500E46DBD /* Address+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1E81D6C146B004A73CE /* Address+CoreDataProperties.swift */; };
+		841ED87B24FF418500E46DBD /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932EDCF11D6E2E59009B1965 /* AppSettings.swift */; };
+		841ED87C24FF418500E46DBD /* AppDelegate+CD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1F81D6C842A004A73CE /* AppDelegate+CD.swift */; };
+		841ED87D24FF42CE00E46DBD /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0532A1DDD329100BCB35E /* Array.swift */; };
+		841ED87E24FF42CE00E46DBD /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0532C1DDD329100BCB35E /* AttributedString.swift */; };
+		841ED87F24FF42CE00E46DBD /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0532E1DDD329100BCB35E /* Date.swift */; };
+		841ED88024FF42CE00E46DBD /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053301DDD329100BCB35E /* Dictionary.swift */; };
+		841ED88124FF42CE00E46DBD /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053321DDD329100BCB35E /* GCD.swift */; };
+		841ED88224FF42CE00E46DBD /* Integer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053341DDD329100BCB35E /* Integer.swift */; };
+		841ED88324FF42E100E46DBD /* NSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0533E1DDD329100BCB35E /* NSArray.swift */; };
+		841ED88424FF42E100E46DBD /* NSString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053401DDD329100BCB35E /* NSString.swift */; };
+		841ED88524FF42E100E46DBD /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053421DDD329100BCB35E /* Number.swift */; };
+		841ED88624FF42E100E46DBD /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053441DDD329100BCB35E /* Set.swift */; };
+		841ED88724FF42E100E46DBD /* String-Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053461DDD329100BCB35E /* String-Crypto.swift */; };
+		841ED88824FF42E100E46DBD /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053471DDD329100BCB35E /* String.swift */; };
+		841ED88924FF42EE00E46DBD /* ManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053361DDD329100BCB35E /* ManagedObject.swift */; };
+		841ED88A24FF42EE00E46DBD /* ManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053381DDD329100BCB35E /* ManagedObjectContext.swift */; };
+		841ED88B24FF42EE00E46DBD /* MKMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0533A1DDD329100BCB35E /* MKMapView.swift */; };
+		841ED88C24FF42EE00E46DBD /* MutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0533C1DDD329100BCB35E /* MutableAttributedString.swift */; };
+		841ED88D24FF42EE00E46DBD /* UIApplication+bolts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053491DDD329100BCB35E /* UIApplication+bolts.swift */; };
+		841ED88E24FF42EE00E46DBD /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0534B1DDD329100BCB35E /* UIButton.swift */; };
+		841ED88F24FF42EE00E46DBD /* UICollectionReusableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0534D1DDD329100BCB35E /* UICollectionReusableHeaderView.swift */; };
+		841ED89024FF42FD00E46DBD /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0534F1DDD329100BCB35E /* UICollectionView.swift */; };
+		841ED89124FF42FD00E46DBD /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053511DDD329100BCB35E /* UICollectionViewCell.swift */; };
+		841ED89224FF42FD00E46DBD /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053531DDD329100BCB35E /* UIColor.swift */; };
+		841ED89324FF42FD00E46DBD /* UIImageViewBolts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053551DDD329100BCB35E /* UIImageViewBolts.swift */; };
+		841ED89424FF42FD00E46DBD /* UIPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053571DDD329100BCB35E /* UIPanGestureRecognizer.swift */; };
+		841ED89524FF42FD00E46DBD /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053591DDD329100BCB35E /* UIScrollView.swift */; };
+		841ED89624FF42FD00E46DBD /* UITableViewCellUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0535B1DDD329100BCB35E /* UITableViewCellUtils.swift */; };
+		841ED89724FF430400E46DBD /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0535D1DDD329100BCB35E /* UIView+AutoLayout.swift */; };
+		841ED89824FF431200E46DBD /* UIView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0535E1DDD329100BCB35E /* UIView+Factory.swift */; };
+		841ED89924FF431200E46DBD /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0535F1DDD329100BCB35E /* UIView.swift */; };
+		841ED89A24FF431200E46DBD /* UIViewController+Containment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053611DDD329100BCB35E /* UIViewController+Containment.swift */; };
+		841ED89B24FF431200E46DBD /* ViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053621DDD329100BCB35E /* ViewControllerUtils.swift */; };
+		841ED89C24FF431200E46DBD /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053641DDD329100BCB35E /* UIWindow.swift */; };
+		841ED89D24FF431200E46DBD /* Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C053661DDD329100BCB35E /* Url.swift */; };
+		841ED89E24FF431200E46DBD /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204ED371DDDFA7100638FDA /* NSObject.swift */; };
+		841ED89F24FF431200E46DBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DDFA601D66934C009D5966 /* AppDelegate.swift */; };
+		841ED8A024FF431A00E46DBD /* CollectorViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E1F3541D72ACB500E7D172 /* CollectorViewTableViewController.swift */; };
+		841ED8A124FF431A00E46DBD /* Collector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E1F3451D7273EB00E7D172 /* Collector.swift */; };
+		841ED8A224FF431A00E46DBD /* AddressbookVC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1EC1D6C1572004A73CE /* AddressbookVC+TableView.swift */; };
+		841ED8A324FF431A00E46DBD /* AddressbookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1BA1D6B35E5004A73CE /* AddressbookViewController.swift */; };
+		841ED8A424FF432500E46DBD /* Address+IO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344DC5B1D6CCED500400EC2 /* Address+IO.swift */; };
+		841ED8A524FF432500E46DBD /* ContactVC+TFDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1E01D6BDC5B004A73CE /* ContactVC+TFDelegate.swift */; };
+		841ED8A624FF432500E46DBD /* ContactVC+MessageUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1DD1D6BD276004A73CE /* ContactVC+MessageUI.swift */; };
+		841ED8A724FF432500E46DBD /* ContactVC+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1E21D6BDD89004A73CE /* ContactVC+Layout.swift */; };
+		841ED8A824FF432500E46DBD /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1C11D6B35E5004A73CE /* ContactViewController.swift */; };
+		841ED8A924FF433300E46DBD /* Map+TFDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1E51D6BE1F8004A73CE /* Map+TFDelegate.swift */; };
+		841ED8AA24FF433300E46DBD /* Map+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1DA1D6B3636004A73CE /* Map+Transitions.swift */; };
+		841ED8AB24FF433300E46DBD /* Map+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1C51D6B35E5004A73CE /* Map+Layout.swift */; };
+		841ED8AC24FF433300E46DBD /* Map+LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1C71D6B35E5004A73CE /* Map+LocationManager.swift */; };
+		841ED8AD24FF433300E46DBD /* Map+LocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1C91D6B35E5004A73CE /* Map+LocationManagerDelegate.swift */; };
+		841ED8AE24FF433300E46DBD /* Map+MapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1CB1D6B35E5004A73CE /* Map+MapViewDelegate.swift */; };
+		841ED8AF24FF433B00E46DBD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1CE1D6B35E5004A73CE /* MapViewController.swift */; };
+		841ED8B024FF433B00E46DBD /* Address+Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1F61D6C8398004A73CE /* Address+Persistance.swift */; };
+		841ED8B124FF434400E46DBD /* DataCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93053A1A1D6E1E1C00FC3D1F /* DataCollector.swift */; };
+		841ED8B224FF434400E46DBD /* Compass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0226CF6A1D6D14690088734B /* Compass.swift */; };
+		841ED8B324FF435500E46DBD /* Compass+Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0226CF6C1D6D14690088734B /* Compass+Address.swift */; };
+		841ED8B424FF435500E46DBD /* Compass+BackgroundLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0226CF6D1D6D14690088734B /* Compass+BackgroundLocation.swift */; };
+		841ED8B524FF435500E46DBD /* Compass+LocManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0226CF6E1D6D14690088734B /* Compass+LocManagerDelegate.swift */; };
+		841ED8B624FF435500E46DBD /* Locomotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0226CF7B1D6D149E0088734B /* Locomotion.swift */; };
+		841ED8B724FF435500E46DBD /* SSIDService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025F0FF61DE239A400235D9B /* SSIDService.swift */; };
+		841ED8B824FF435500E46DBD /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1F01D6C1616004A73CE /* AddressTableViewCell.swift */; };
+		841ED8B924FF435500E46DBD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022C6E6E1D669BCB009B7236 /* BaseViewController.swift */; };
+		841ED8BA24FF435F00E46DBD /* NSManagedObject+SAK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344DC5E1D6CD05A00400EC2 /* NSManagedObject+SAK.swift */; };
+		841ED8BB24FF435F00E46DBD /* NSManagedObjectContext+SAK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344DC5F1D6CD05A00400EC2 /* NSManagedObjectContext+SAK.swift */; };
+		841ED8BC24FF436D00E46DBD /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E1F34E1D72A43F00E7D172 /* Session+CoreDataProperties.swift */; };
+		841ED8BD24FF436D00E46DBD /* Address+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1E81D6C146B004A73CE /* Address+CoreDataProperties.swift */; };
+		841ED8BE24FF436D00E46DBD /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1E91D6C146B004A73CE /* Address.swift */; };
+		841ED8BF24FF436D00E46DBD /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932EDCF11D6E2E59009B1965 /* AppSettings.swift */; };
+		841ED8C024FF436D00E46DBD /* AppDelegate+CD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023BD1F81D6C842A004A73CE /* AppDelegate+CD.swift */; };
+		841ED8C124FF436D00E46DBD /* MapTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DDFA781D66934C009D5966 /* MapTemplateTests.swift */; };
 		85CD4CE13E995F7FD2166D66 /* Pods_defaults_911.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5185C56D441EC174945B735 /* Pods_defaults_911.framework */; };
 		93053A1B1D6E1E1C00FC3D1F /* DataCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93053A1A1D6E1E1C00FC3D1F /* DataCollector.swift */; };
 		932EDCF21D6E2E59009B1965 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932EDCF11D6E2E59009B1965 /* AppSettings.swift */; };
@@ -1633,8 +1772,77 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841ED87624FF418500E46DBD /* BaseViewController.swift in Sources */,
+				841ED87724FF418500E46DBD /* NSManagedObject+SAK.swift in Sources */,
+				841ED87824FF418500E46DBD /* NSManagedObjectContext+SAK.swift in Sources */,
+				841ED87924FF418500E46DBD /* Session+CoreDataProperties.swift in Sources */,
+				841ED87A24FF418500E46DBD /* Address+CoreDataProperties.swift in Sources */,
+				841ED87B24FF418500E46DBD /* AppSettings.swift in Sources */,
+				841ED87C24FF418500E46DBD /* AppDelegate+CD.swift in Sources */,
+				841ED87524FF417500E46DBD /* MapViewController.swift in Sources */,
+				841ED86E24FF416500E46DBD /* ContactViewController.swift in Sources */,
+				841ED86F24FF416500E46DBD /* Map+TFDelegate.swift in Sources */,
+				841ED87024FF416500E46DBD /* Map+Transitions.swift in Sources */,
+				841ED87124FF416500E46DBD /* Map+Layout.swift in Sources */,
+				841ED87224FF416500E46DBD /* Map+LocationManager.swift in Sources */,
+				841ED87324FF416500E46DBD /* Map+LocationManagerDelegate.swift in Sources */,
+				841ED87424FF416500E46DBD /* Map+MapViewDelegate.swift in Sources */,
+				841ED86524FF415700E46DBD /* Address+Persistance.swift in Sources */,
+				841ED86624FF415700E46DBD /* DataCollector.swift in Sources */,
+				841ED86724FF415700E46DBD /* Compass.swift in Sources */,
+				841ED86824FF415700E46DBD /* Compass+Address.swift in Sources */,
+				841ED86924FF415700E46DBD /* Compass+BackgroundLocation.swift in Sources */,
+				841ED86A24FF415700E46DBD /* Compass+LocManagerDelegate.swift in Sources */,
+				841ED86B24FF415700E46DBD /* Locomotion.swift in Sources */,
+				841ED86C24FF415700E46DBD /* SSIDService.swift in Sources */,
+				841ED86D24FF415700E46DBD /* AddressTableViewCell.swift in Sources */,
+				841ED86024FF414700E46DBD /* AddressbookViewController.swift in Sources */,
+				841ED86124FF414700E46DBD /* Address+IO.swift in Sources */,
+				841ED86224FF414700E46DBD /* ContactVC+TFDelegate.swift in Sources */,
+				841ED86324FF414700E46DBD /* ContactVC+MessageUI.swift in Sources */,
+				841ED86424FF414700E46DBD /* ContactVC+Layout.swift in Sources */,
+				841ED85D24FF413E00E46DBD /* CollectorViewTableViewController.swift in Sources */,
+				841ED85E24FF413E00E46DBD /* Collector.swift in Sources */,
+				841ED85F24FF413E00E46DBD /* AddressbookVC+TableView.swift in Sources */,
+				841ED83F24FF412E00E46DBD /* Integer.swift in Sources */,
+				841ED84024FF412E00E46DBD /* ManagedObject.swift in Sources */,
+				841ED84124FF412E00E46DBD /* ManagedObjectContext.swift in Sources */,
+				841ED84224FF412E00E46DBD /* MKMapView.swift in Sources */,
+				841ED84324FF412E00E46DBD /* MutableAttributedString.swift in Sources */,
+				841ED84424FF412E00E46DBD /* NSArray.swift in Sources */,
+				841ED84524FF412E00E46DBD /* NSString.swift in Sources */,
+				841ED84624FF412E00E46DBD /* Number.swift in Sources */,
+				841ED84724FF412E00E46DBD /* Set.swift in Sources */,
+				841ED84824FF412E00E46DBD /* String-Crypto.swift in Sources */,
+				841ED84924FF412E00E46DBD /* String.swift in Sources */,
+				841ED84A24FF412E00E46DBD /* UIApplication+bolts.swift in Sources */,
+				841ED84B24FF412E00E46DBD /* UIButton.swift in Sources */,
+				841ED84C24FF412E00E46DBD /* UICollectionReusableHeaderView.swift in Sources */,
+				841ED84D24FF412E00E46DBD /* UICollectionView.swift in Sources */,
+				841ED84E24FF412E00E46DBD /* UICollectionViewCell.swift in Sources */,
+				841ED84F24FF412E00E46DBD /* UIColor.swift in Sources */,
+				841ED85024FF412E00E46DBD /* UIImageViewBolts.swift in Sources */,
+				841ED85124FF412E00E46DBD /* UIPanGestureRecognizer.swift in Sources */,
+				841ED85224FF412E00E46DBD /* UIScrollView.swift in Sources */,
+				841ED85324FF412E00E46DBD /* UITableViewCellUtils.swift in Sources */,
+				841ED85424FF412E00E46DBD /* UIView+AutoLayout.swift in Sources */,
+				841ED85524FF412E00E46DBD /* UIView+Factory.swift in Sources */,
+				841ED85624FF412E00E46DBD /* UIView.swift in Sources */,
+				841ED85724FF412E00E46DBD /* UIViewController+Containment.swift in Sources */,
+				841ED85824FF412E00E46DBD /* ViewControllerUtils.swift in Sources */,
+				841ED85924FF412E00E46DBD /* UIWindow.swift in Sources */,
+				841ED85A24FF412E00E46DBD /* Url.swift in Sources */,
+				841ED85B24FF412E00E46DBD /* NSObject.swift in Sources */,
+				841ED85C24FF412E00E46DBD /* AppDelegate.swift in Sources */,
+				841ED83C24FF411200E46DBD /* AttributedString.swift in Sources */,
+				841ED83D24FF411200E46DBD /* Dictionary.swift in Sources */,
+				841ED83E24FF411200E46DBD /* GCD.swift in Sources */,
+				841ED83A24FF410200E46DBD /* Array.swift in Sources */,
+				841ED83B24FF410200E46DBD /* Address.swift in Sources */,
+				841ED83924FF405100E46DBD /* Date.swift in Sources */,
 				02DDFA791D66934C009D5966 /* MapTemplateTests.swift in Sources */,
 				02FEC9381D88CC5200CE6563 /* PlotViewController.swift in Sources */,
+				841ED83724FF3B9600E46DBD /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1642,8 +1850,78 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841ED8BC24FF436D00E46DBD /* Session+CoreDataProperties.swift in Sources */,
+				841ED8BD24FF436D00E46DBD /* Address+CoreDataProperties.swift in Sources */,
+				841ED8BE24FF436D00E46DBD /* Address.swift in Sources */,
+				841ED8BF24FF436D00E46DBD /* AppSettings.swift in Sources */,
+				841ED8C024FF436D00E46DBD /* AppDelegate+CD.swift in Sources */,
+				841ED8C124FF436D00E46DBD /* MapTemplateTests.swift in Sources */,
+				841ED8BA24FF435F00E46DBD /* NSManagedObject+SAK.swift in Sources */,
+				841ED8BB24FF435F00E46DBD /* NSManagedObjectContext+SAK.swift in Sources */,
+				841ED8B324FF435500E46DBD /* Compass+Address.swift in Sources */,
+				841ED8B424FF435500E46DBD /* Compass+BackgroundLocation.swift in Sources */,
+				841ED8B524FF435500E46DBD /* Compass+LocManagerDelegate.swift in Sources */,
+				841ED8B624FF435500E46DBD /* Locomotion.swift in Sources */,
+				841ED8B724FF435500E46DBD /* SSIDService.swift in Sources */,
+				841ED8B824FF435500E46DBD /* AddressTableViewCell.swift in Sources */,
+				841ED8B924FF435500E46DBD /* BaseViewController.swift in Sources */,
+				841ED8B124FF434400E46DBD /* DataCollector.swift in Sources */,
+				841ED8B224FF434400E46DBD /* Compass.swift in Sources */,
+				841ED8AF24FF433B00E46DBD /* MapViewController.swift in Sources */,
+				841ED8B024FF433B00E46DBD /* Address+Persistance.swift in Sources */,
+				841ED8A924FF433300E46DBD /* Map+TFDelegate.swift in Sources */,
+				841ED8AA24FF433300E46DBD /* Map+Transitions.swift in Sources */,
+				841ED8AB24FF433300E46DBD /* Map+Layout.swift in Sources */,
+				841ED8AC24FF433300E46DBD /* Map+LocationManager.swift in Sources */,
+				841ED8AD24FF433300E46DBD /* Map+LocationManagerDelegate.swift in Sources */,
+				841ED8AE24FF433300E46DBD /* Map+MapViewDelegate.swift in Sources */,
+				841ED8A424FF432500E46DBD /* Address+IO.swift in Sources */,
+				841ED8A524FF432500E46DBD /* ContactVC+TFDelegate.swift in Sources */,
+				841ED8A624FF432500E46DBD /* ContactVC+MessageUI.swift in Sources */,
+				841ED8A724FF432500E46DBD /* ContactVC+Layout.swift in Sources */,
+				841ED8A824FF432500E46DBD /* ContactViewController.swift in Sources */,
+				841ED8A024FF431A00E46DBD /* CollectorViewTableViewController.swift in Sources */,
+				841ED8A124FF431A00E46DBD /* Collector.swift in Sources */,
+				841ED8A224FF431A00E46DBD /* AddressbookVC+TableView.swift in Sources */,
+				841ED8A324FF431A00E46DBD /* AddressbookViewController.swift in Sources */,
+				841ED89824FF431200E46DBD /* UIView+Factory.swift in Sources */,
+				841ED89924FF431200E46DBD /* UIView.swift in Sources */,
+				841ED89A24FF431200E46DBD /* UIViewController+Containment.swift in Sources */,
+				841ED89B24FF431200E46DBD /* ViewControllerUtils.swift in Sources */,
+				841ED89C24FF431200E46DBD /* UIWindow.swift in Sources */,
+				841ED89D24FF431200E46DBD /* Url.swift in Sources */,
+				841ED89E24FF431200E46DBD /* NSObject.swift in Sources */,
+				841ED89F24FF431200E46DBD /* AppDelegate.swift in Sources */,
+				841ED89724FF430400E46DBD /* UIView+AutoLayout.swift in Sources */,
+				841ED89024FF42FD00E46DBD /* UICollectionView.swift in Sources */,
+				841ED89124FF42FD00E46DBD /* UICollectionViewCell.swift in Sources */,
+				841ED89224FF42FD00E46DBD /* UIColor.swift in Sources */,
+				841ED89324FF42FD00E46DBD /* UIImageViewBolts.swift in Sources */,
+				841ED89424FF42FD00E46DBD /* UIPanGestureRecognizer.swift in Sources */,
+				841ED89524FF42FD00E46DBD /* UIScrollView.swift in Sources */,
+				841ED89624FF42FD00E46DBD /* UITableViewCellUtils.swift in Sources */,
+				841ED88924FF42EE00E46DBD /* ManagedObject.swift in Sources */,
+				841ED88A24FF42EE00E46DBD /* ManagedObjectContext.swift in Sources */,
+				841ED88B24FF42EE00E46DBD /* MKMapView.swift in Sources */,
+				841ED88C24FF42EE00E46DBD /* MutableAttributedString.swift in Sources */,
+				841ED88D24FF42EE00E46DBD /* UIApplication+bolts.swift in Sources */,
+				841ED88E24FF42EE00E46DBD /* UIButton.swift in Sources */,
+				841ED88F24FF42EE00E46DBD /* UICollectionReusableHeaderView.swift in Sources */,
+				841ED88324FF42E100E46DBD /* NSArray.swift in Sources */,
+				841ED88424FF42E100E46DBD /* NSString.swift in Sources */,
+				841ED88524FF42E100E46DBD /* Number.swift in Sources */,
+				841ED88624FF42E100E46DBD /* Set.swift in Sources */,
+				841ED88724FF42E100E46DBD /* String-Crypto.swift in Sources */,
+				841ED88824FF42E100E46DBD /* String.swift in Sources */,
+				841ED87D24FF42CE00E46DBD /* Array.swift in Sources */,
+				841ED87E24FF42CE00E46DBD /* AttributedString.swift in Sources */,
+				841ED87F24FF42CE00E46DBD /* Date.swift in Sources */,
+				841ED88024FF42CE00E46DBD /* Dictionary.swift in Sources */,
+				841ED88124FF42CE00E46DBD /* GCD.swift in Sources */,
+				841ED88224FF42CE00E46DBD /* Integer.swift in Sources */,
 				02DDFA841D66934C009D5966 /* MapTemplateUITests.swift in Sources */,
 				02FEC9371D88CC5100CE6563 /* PlotViewController.swift in Sources */,
+				841ED83824FF3B9A00E46DBD /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1807,8 +2085,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hacstudios.MapTemplate;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = 911;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -1823,8 +2102,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hacstudios.MapTemplate;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = 911;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -1838,8 +2118,9 @@
 				INFOPLIST_FILE = MapTemplateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hacstudios.MapTemplateTests;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = 911;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/911.app/911";
 			};
@@ -1854,8 +2135,9 @@
 				INFOPLIST_FILE = MapTemplateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hacstudios.MapTemplateTests;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = 911;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/911.app/911";
 			};
