@@ -39,7 +39,7 @@ public extension String {
     */
     var _length: Int {
         get {
-            return self.characters.count
+            return self.count
         }
     }
 
@@ -339,7 +339,7 @@ public extension String {
     func _toDateUTCFormat() -> Date? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SS'Z'"
-        dateFormatter.timeZone = TimeZone(abbreviation: "GMT") as TimeZone!
+        dateFormatter.timeZone = TimeZone(abbreviation: "GMT") as TimeZone?
 
         return dateFormatter.date(from: self) as Date?
     }
@@ -371,7 +371,7 @@ public extension String {
     func _toCharArray() -> [Character] {
 
         var chars : [Character] = []
-        for c in self.characters {
+        for c in self {
             chars.append(c as Character)
         }
 

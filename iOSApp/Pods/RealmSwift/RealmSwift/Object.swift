@@ -415,7 +415,7 @@ public class ObjectUtil: NSObject {
     @objc private class func getGenericListPropertyNames(_ object: Any) -> NSArray {
         return Mirror(reflecting: object).children.filter { (prop: Mirror.Child) in
             return type(of: prop.value) is RLMListBase.Type
-        }.flatMap { (prop: Mirror.Child) in
+        }.compactMap { (prop: Mirror.Child) in
             return prop.label
         } as NSArray
     }
@@ -465,7 +465,7 @@ public class ObjectUtil: NSObject {
     @objc private class func getLinkingObjectsProperties(_ object: Any) -> [String: [String: String]] {
         let properties = Mirror(reflecting: object).children.filter { (prop: Mirror.Child) in
             return prop.value as? LinkingObjectsBase != nil
-        }.flatMap { (prop: Mirror.Child) in
+        }.compactMap { (prop: Mirror.Child) in
             (prop.label!, prop.value as! LinkingObjectsBase)
         }
         return properties.reduce([:]) { (dictionary, property) in

@@ -49,9 +49,9 @@ public extension MKMapView {
     
     func _widthInMeters() -> Double {
         let mRect: MKMapRect = self.visibleMapRect
-        let eastMapPoint = MKMapPointMake(MKMapRectGetMinX(mRect), MKMapRectGetMidY(mRect))
-        let westMapPoint = MKMapPointMake(MKMapRectGetMaxX(mRect), MKMapRectGetMidY(mRect))
-        let currentDistWideInMeters = MKMetersBetweenMapPoints(eastMapPoint, westMapPoint)
+        let eastMapPoint = MKMapPoint.init(x: mRect.minX, y: mRect.midY)
+        let westMapPoint = MKMapPoint.init(x: mRect.maxX, y: mRect.midY)
+        let currentDistWideInMeters = eastMapPoint.distance(to: westMapPoint)
         return currentDistWideInMeters
     }
     

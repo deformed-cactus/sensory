@@ -34,7 +34,7 @@ class DataCollector: NSObject {
   
   func registerForNotifications() {
     let notificationCenter = NotificationCenter.default
-    notificationCenter.addObserver(self, selector: #selector(appMovedToBackground), name: NSNotification.Name.UIApplicationWillResignActive, object: nil)
+    notificationCenter.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.willResignActiveNotification, object: nil)
   }
   
   

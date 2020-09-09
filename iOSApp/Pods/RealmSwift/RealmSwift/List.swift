@@ -481,7 +481,7 @@ extension List: RealmCollection, RangeReplaceableCollection {
     // These should not be necessary, but Swift 3.1's compiler fails to infer the `SubSequence`,
     // and the standard library neglects to provide the default implementation of `subscript`
     /// :nodoc:
-    public typealias SubSequence = RangeReplaceableRandomAccessSlice<List>
+    public typealias SubSequence = Slice<List>
 
     /// :nodoc:
     public subscript(slice: Range<Int>) -> SubSequence {
@@ -507,7 +507,7 @@ extension List: RealmCollection, RangeReplaceableCollection {
 
     // This should be inferred, but Xcode 8.1 is unable to
     /// :nodoc:
-    public typealias Indices = DefaultRandomAccessIndices<List>
+    public typealias Indices = DefaultIndices<List>
 
     /// The position of the first element in a non-empty collection.
     /// Identical to endIndex in an empty collection.
