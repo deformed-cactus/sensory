@@ -1,7 +1,7 @@
 //
 //  SessionManager.swift
 //
-//  Copyright (c) 2014-2016 Alamofire Software Foundation (http://alamofire.org/)
+//  Copyright (c) 2014 Alamofire Software Foundation (http://alamofire.org/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -249,6 +249,7 @@ open class SessionManager {
     /// - parameter urlRequest: The URL request.
     ///
     /// - returns: The created `DataRequest`.
+    @discardableResult
     open func request(_ urlRequest: URLRequestConvertible) -> DataRequest {
         var originalRequest: URLRequest?
 
@@ -283,7 +284,7 @@ open class SessionManager {
         let request = DataRequest(session: session, requestTask: requestTask, error: underlyingError)
 
         if let retrier = retrier, error is AdaptError {
-            allowRetrier(retrier, toRetry: request, with: error)
+            allowRetrier(retrier, toRetry: request, with: underlyingError)
         } else {
             if startRequestsImmediately { request.resume() }
         }
@@ -429,7 +430,7 @@ open class SessionManager {
         download.downloadDelegate.destination = destination
 
         if let retrier = retrier, error is AdaptError {
-            allowRetrier(retrier, toRetry: download, with: error)
+            allowRetrier(retrier, toRetry: download, with: underlyingError)
         } else {
             if startRequestsImmediately { download.resume() }
         }
@@ -610,6 +611,7 @@ open class SessionManager {
         to url: URLConvertible,
         method: HTTPMethod = .post,
         headers: HTTPHeaders? = nil,
+        queue: DispatchQueue? = nil,
         encodingCompletion: ((MultipartFormDataEncodingResult) -> Void)?)
     {
         do {
@@ -619,10 +621,11 @@ open class SessionManager {
                 multipartFormData: multipartFormData,
                 usingThreshold: encodingMemoryThreshold,
                 with: urlRequest,
+                queue: queue,
                 encodingCompletion: encodingCompletion
             )
         } catch {
-            DispatchQueue.main.async { encodingCompletion?(.failure(error)) }
+            (queue ?? DispatchQueue.main).async { encodingCompletion?(.failure(error)) }
         }
     }
 
@@ -653,11 +656,14 @@ open class SessionManager {
         multipartFormData: @escaping (MultipartFormData) -> Void,
         usingThreshold encodingMemoryThreshold: UInt64 = SessionManager.multipartFormDataEncodingMemoryThreshold,
         with urlRequest: URLRequestConvertible,
+        queue: DispatchQueue? = nil,
         encodingCompletion: ((MultipartFormDataEncodingResult) -> Void)?)
     {
         DispatchQueue.global(qos: .utility).async {
             let formData = MultipartFormData()
             multipartFormData(formData)
+
+            var tempFileURL: URL?
 
             do {
                 var urlRequestWithContentType = try urlRequest.asURLRequest()
@@ -674,13 +680,15 @@ open class SessionManager {
                         streamFileURL: nil
                     )
 
-                    DispatchQueue.main.async { encodingCompletion?(encodingResult) }
+                    (queue ?? DispatchQueue.main).async { encodingCompletion?(encodingResult) }
                 } else {
                     let fileManager = FileManager.default
                     let tempDirectoryURL = URL(fileURLWithPath: NSTemporaryDirectory())
                     let directoryURL = tempDirectoryURL.appendingPathComponent("org.alamofire.manager/multipart.form.data")
                     let fileName = UUID().uuidString
                     let fileURL = directoryURL.appendingPathComponent(fileName)
+
+                    tempFileURL = fileURL
 
                     var directoryError: Error?
 
@@ -708,7 +716,7 @@ open class SessionManager {
                         }
                     }
 
-                    DispatchQueue.main.async {
+                    (queue ?? DispatchQueue.main).async {
                         let encodingResult = MultipartFormDataEncodingResult.success(
                             request: upload,
                             streamingFromDisk: true,
@@ -719,7 +727,16 @@ open class SessionManager {
                     }
                 }
             } catch {
-                DispatchQueue.main.async { encodingCompletion?(.failure(error)) }
+                // Cleanup the temp file in the event that the multipart form data encoding failed
+                if let tempFileURL = tempFileURL {
+                    do {
+                        try FileManager.default.removeItem(at: tempFileURL)
+                    } catch {
+                        // No-op
+                    }
+                }
+
+                (queue ?? DispatchQueue.main).async { encodingCompletion?(.failure(error)) }
             }
         }
     }
@@ -756,7 +773,7 @@ open class SessionManager {
         let upload = UploadRequest(session: session, requestTask: uploadTask, error: underlyingError)
 
         if let retrier = retrier, error is AdaptError {
-            allowRetrier(retrier, toRetry: upload, with: error)
+            allowRetrier(retrier, toRetry: upload, with: underlyingError)
         } else {
             if startRequestsImmediately { upload.resume() }
         }
@@ -834,6 +851,10 @@ open class SessionManager {
         do {
             let task = try originalTask.task(session: session, adapter: adapter, queue: queue)
 
+            if let originalTask = request.task {
+                delegate[originalTask] = nil // removes the old request to avoid endless growth
+            }
+
             request.delegate.task = task // resets all task delegate data
 
             request.retryCount += 1
@@ -861,12 +882,16 @@ open class SessionManager {
                     return
                 }
 
-                let retrySucceeded = strongSelf.retry(request)
+                DispatchQueue.utility.after(timeDelay) {
+                    guard let strongSelf = self else { return }
 
-                if retrySucceeded, let task = request.task {
-                    strongSelf.delegate[task] = request
-                } else {
-                    if strongSelf.startRequestsImmediately { request.resume() }
+                    let retrySucceeded = strongSelf.retry(request)
+
+                    if retrySucceeded, let task = request.task {
+                        strongSelf.delegate[task] = request
+                    } else {
+                        if strongSelf.startRequestsImmediately { request.resume() }
+                    }
                 }
             }
         }

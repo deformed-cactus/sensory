@@ -1,27 +1,27 @@
 PODS:
-  - Alamofire (4.1.0)
-  - Charts (3.0.5):
-    - Charts/Core (= 3.0.5)
-  - Charts/Core (3.0.5)
-  - Realm (2.8.1):
-    - Realm/Headers (= 2.8.1)
-  - Realm/Headers (2.8.1)
-  - RealmSwift (2.8.1):
-    - Realm (= 2.8.1)
+  - Alamofire (4.9.1)
+  - Charts (3.4.0):
+    - Charts/Core (= 3.4.0)
+  - Charts/Core (3.4.0)
+  - Realm (4.4.1):
+    - Realm/Headers (= 4.4.1)
+  - Realm/Headers (4.4.1)
+  - RealmSwift (4.4.1):
+    - Realm (= 4.4.1)
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
   - SVProgressHUD (2.0.4)
-  - SwiftyJSON (3.1.3)
+  - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.0)
-  - Charts (= 3.0.5)
-  - Realm (= 2.8.1)
-  - RealmSwift (= 2.8.1)
-  - SDWebImage (~> 3.7.3)
+  - Alamofire (= 4.9.1)
+  - Charts (= 3.4.0)
+  - Realm (= 4.4.1)
+  - RealmSwift (= 4.4.1)
+  - SDWebImage
   - SVProgressHUD
-  - SwiftyJSON
+  - SwiftyJSON (= 5.0.0)
 
 SPEC REPOS:
   trunk:
@@ -34,14 +34,14 @@ SPEC REPOS:
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: e266cf991b933498df791e645e0d8ac294492153
-  Charts: 45cdc985b764c838b35ee47eb1365d15735f6d1a
-  Realm: 2627602ad6818451f0cb8c2a6e072f7f10a5f360
-  RealmSwift: 4764ca7657f2193c256fb032c0b123926f70dbcd
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
+  Realm: 4eb04d7487bd43c0581256f40b424eafb711deff
+  RealmSwift: 3eb8924ff7100df5928c7602f71d0fec51e7c9c5
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
-  SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 4e0590fca897951bcb122cee56fcb381217a26ec
+PODFILE CHECKSUM: 70ead8dbb943b79dc92ef3798e5ee262e810cbea
 
 COCOAPODS: 1.9.3

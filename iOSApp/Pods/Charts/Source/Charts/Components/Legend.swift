@@ -12,10 +12,6 @@
 import Foundation
 import CoreGraphics
 
-#if !os(OSX)
-    import UIKit
-#endif
-
 @objc(ChartLegend)
 open class Legend: ComponentBase
 {
@@ -167,7 +163,7 @@ open class Legend: ComponentBase
             guard let label = entry.label
                 else { continue }
             
-            let size = (label as NSString?).size(withAttributes: [NSAttributedString.Key.font: font])
+            let size = (label as NSString).size(withAttributes: [.font: font])
             
             if size.width > maxW
             {
@@ -256,7 +252,7 @@ open class Legend: ComponentBase
                 
                 if label != nil
                 {
-                    let size = (label as NSString?).size(withAttributes: [NSAttributedString.Key.font: labelFont])
+                    let size = (label! as NSString).size(withAttributes: [.font: labelFont])
                     
                     if drawingForm && !wasStacked
                     {
@@ -271,11 +267,7 @@ open class Legend: ComponentBase
                     }
                     
                     width += size.width
-                    
-                    if i < entryCount - 1
-                    {
-                        maxHeight += labelLineHeight + yEntrySpace
-                    }
+                    maxHeight += labelLineHeight + yEntrySpace
                 }
                 else
                 {
@@ -343,7 +335,7 @@ open class Legend: ComponentBase
                 // grouped forms have null labels
                 if label != nil
                 {
-                    calculatedLabelSizes[i] = (label as NSString?).size(withAttributes: labelAttrs)
+                    calculatedLabelSizes[i] = (label! as NSString).size(withAttributes: labelAttrs)
                     requiredWidth += drawingForm ? formToTextSpace + formSize : 0.0
                     requiredWidth += calculatedLabelSizes[i].width
                 }
@@ -420,7 +412,7 @@ open class Legend: ComponentBase
     }
     
     /// **default**: false (automatic legend)
-    /// - returns: `true` if a custom legend entries has been set
+    /// `true` if a custom legend entries has been set
     @objc open var isLegendCustom: Bool
     {
         return _isLegendCustom

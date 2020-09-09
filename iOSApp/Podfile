@@ -8,13 +8,13 @@ use_frameworks!
 abstract_target 'defaults' do
 
     # Networking
-    pod 'Alamofire', '~> 4.0'
-    pod 'SDWebImage', '~>3.7.3'
+    pod 'Alamofire', '4.9.1' 
+    pod 'SDWebImage'
     pod 'SVProgressHUD'
-    pod 'SwiftyJSON'
-    pod 'Charts', '3.0.5'
-    pod 'Realm', '2.8.1'
-    pod 'RealmSwift', '2.8.1'
+    pod 'SwiftyJSON', '5.0.0'
+    pod 'Charts', '3.4.0'
+    pod 'Realm', '4.4.1'
+    pod 'RealmSwift', '4.4.1'
 
     target '911'
     target '911Tests'

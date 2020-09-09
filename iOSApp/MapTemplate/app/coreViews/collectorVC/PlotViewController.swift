@@ -165,13 +165,13 @@ class PlotViewController: UIViewController {
     
     let size: CGFloat = 4.0
     //Y
-    let indoorsY = ScatterChartDataSet(values: indoorPoints, label: "Indoors")
+    let indoorsY = ScatterChartDataSet(entries: indoorPoints, label: "Indoors")
     indoorsY.setColor(UIColor.red)
     indoorsY.scatterShapeSize = size
     indoorsY.setScatterShape(.circle)
 
     
-    let outdoorsY = ScatterChartDataSet(values: outdoorPoints, label: "Outdoors")
+    let outdoorsY = ScatterChartDataSet(entries: outdoorPoints, label: "Outdoors")
     outdoorsY.scatterShapeSize = size
     outdoorsY.setScatterShape(.circle)
     
